@@ -34,22 +34,7 @@ function initializeApp(data) {
             liff.closeWindow();
         }).catch(function (error) {
             window.alert("ไม่สามารถส่งได้: " + error);
-        });
-    });
-
-    // sendMessages call
-    document.getElementById('sendmessagebutton2').addEventListener('click', function () {
-        liff.sendMessages([{
-            type: 'text',
-            text: "ยิงโพส2"
-        
-        }]).then(function () {
-            liff.closeWindow();
-        }).catch(function (error) {
-            window.alert("ไม่สามารถส่งได้: " + error);
-        });
-    });
-    
+     }); 
 
     // get access token
     document.getElementById('getaccesstoken').addEventListener('click', function () {
